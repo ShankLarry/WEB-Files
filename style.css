@@ -1,6 +1,6 @@
 #top h1{
   font-family:"Helvetica";
-  font-size: 75px;
+  font-size: 6vw;
   color: #EA4859;
   text-align: center;
 }
@@ -14,7 +14,7 @@
 
 h2{
   font-family:"Helvetica";
-  font-size: 35px;
+  font-size: 4vw;
   color: #91B7CA;
 }
 
@@ -24,6 +24,11 @@ body{
   font-size: 19px;
   color: white;
   text-align:center;
+}
+
+.main{
+  margin-left: 25vw;
+  margin-right: 25vw;
 }
 
 a:link {
