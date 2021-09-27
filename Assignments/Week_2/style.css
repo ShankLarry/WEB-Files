@@ -1,13 +1,13 @@
 body{
   background-color:#38516b;
-  font-family: "Tahoma";
+  font-family: 'Lato', sans-serif;
   font-size: 15px;
   color: white;
 }
 
 h1{
   font-family:"Helvetica";
-  font-size: 6vw;
+  font-size: 5vw;
   color: #EA4859;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -15,7 +15,7 @@ h1{
 
 h2{
   font-family:"Helvetica";
-  font-size: 4vw;
+  font-size: 3vw;
   color: #91B7CA;
   margin-top:10px;
   margin-bottom: 10px;
