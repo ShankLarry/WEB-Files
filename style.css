@@ -3,6 +3,8 @@
   font-size: 6vw;
   color: #EA4859;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 #top img{
@@ -10,16 +12,22 @@
   margin-left: auto;
   margin-right: auto;
   width:30vw;
+  margin-bottom: 0px;
 }
 
 h2{
   font-family:"Helvetica";
   font-size: 4vw;
   color: #91B7CA;
+  margin-top:10px;
+  margin-bottom: 10px;
 }
 
+p{
+  margin-top: 10px;
+}
 body{
-  background-color:#31475E;
+  background-color:#38516b;
   font-family: "Tahoma";
   font-size: 19px;
   color: white;
@@ -31,14 +39,21 @@ body{
   margin-right: 25vw;
 }
 
+hr{
+  border: 2px solid #00FFC5;
+  border-radius: 1px;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
 a:link {
-  color: #EA4859;
+  color: #00FFC5;
 }
 
 a:hover{
-  color: yellow;
+  color: #EA4859;
 }
 
 a:visited{
-  color: #A0A8BA;
+  color: #FCD3DE;
 }
