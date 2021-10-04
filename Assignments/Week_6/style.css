@@ -1,0 +1,70 @@
+#hero{
+  width:100vw;
+  height:60vh;
+  overflow: hidden;
+  margin:0px;
+  padding:0px;
+}
+
+#heroimg{
+  width: 100vw;
+  position: relative;
+  bottom:400px;
+}
+
+#hero h1{
+  font-family:"Helvetica";
+  color: white;
+  z-index: 1;
+  position:relative;
+  font-size: 5vw;
+  top: 7vh;
+  margin:0 70vw 0 0;
+}
+
+#picChange{
+  width: 30vw;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #38516b;
+  font-family: 'Lato', sans-serif;
+  font-size: 19px;
+  color: white;
+  text-align:center;
+}
+
+.main{
+  margin-left: 25vw;
+  margin-right: 25vw;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h2{
+  text-align: center;
+  font-family:"Helvetica";
+  font-size: 3vw;
+  color: #91B7CA;
+}
+
+.buttonStyle{
+  background-color: #91B7CA;
+  color: #FFFF;
+  border-radius:2px;
+  font-size: 30px;
+  margin: 10px;
+  padding: 7px 20px;
+}
+
+
+button:hover{
+  border: solid #00FFC5 3px;
+}
+
+button:active{
+  background-color: #91B7CA;
+  color: #FCD3DE;
+}
