@@ -1,0 +1,58 @@
+.container{
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  position: relative;
+  top: 25px;
+}
+
+.flexitem{
+  flex-grow: 1;
+  padding-left: 10px;
+  background-color: #222d40;
+  opacity: 0.9;
+  margin: auto;
+  margin-left: 37vw;
+  width: 32vw;
+  border-radius:8px;
+  position: relative;
+  bottom: 450px;
+  z-index: 1;
+}
+
+body{
+  background-color: #222d40;
+}
+
+button{
+  border-radius: 5px;
+  padding: 1vh 1vw;
+  float: right;
+  position: absolute;
+  top:450px;
+  left: 848px;
+  background-color: #222d40;
+  color: white;
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-size: 30px;
+}
+
+button:hover{
+  border: red solid 1px;
+  color: red;
+}
+
+button: active{
+  color: #c3c6c9;
+}
+
+h1{
+  color: #e8eaed;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+
+span{
+  font-family: 'Big Shoulders Inline Text', cursive;
+  color: red;
+}
