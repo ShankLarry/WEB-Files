@@ -1,0 +1,96 @@
+body{
+  background-color: #3D5A80;
+  font-family: 'Helvetica';
+  font-size: 20px;
+  color: #fff;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Helvetica';
+  color: #FFC9B5;
+  font-size: 64px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h2, h3{
+  font-family: 'Allan';
+  color: #fff;
+}
+
+h2{
+  font-size: 48px;
+  margin-top: 10px;
+  position: absolute;
+  width: 58%;
+  text-align: center;
+}
+
+h3{
+  font-size: 36px;
+  margin-top: 0;
+}
+
+#generator{
+  display: flex;
+  width: auto;
+  margin: 5vh 10vw 0 10vw;
+  height: 75vh;
+}
+
+#selections{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 20px;
+  height: 75vh;
+}
+
+button{
+  background-color: #98C1D9;
+  border: none;
+  color: white;
+  font-family: "Allan";
+  text-align: center;
+  font-size: 36px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 3px 3px 3px #2E3238;
+}
+
+#content{
+  flex-grow: 2;
+  width: 827px;
+  display: flex;
+  background-color: #F27F7D;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #2E3238;
+}
+
+#ideas {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  width: 410px;
+}
+
+.time{
+  flex-grow: 1;
+}
+
+#imagery{
+  flex-grow: 1;
+  margin:auto;
+  margin-right: 50px;
+  /* margin: 50px 50px 50px 0; */
+
+}
+
+img{
+  width: 25vw;
+  display: block;
+  margin: auto;
+}
