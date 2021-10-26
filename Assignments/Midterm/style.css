@@ -50,7 +50,7 @@ h3{
 
 button{
   background-color: #98C1D9;
-  border: none;
+  border: 1px solid #98C1D9;
   color: white;
   font-family: "Allan";
   text-align: center;
@@ -58,6 +58,11 @@ button{
   border-radius: 10px;
   width: 220px;
   box-shadow: 3px 3px 3px #2E3238;
+}
+
+button:hover{
+  background-color: #6BA5C7;
+  border-color: #FFC9B5;
 }
 
 #content{
@@ -93,4 +98,18 @@ img{
   width: 25vw;
   display: block;
   margin: auto;
+}
+
+a:link{
+  color: #FFC9B5;
+  float: right;
+  margin-right: 150px;
+}
+
+a:visited{
+  color: #F27F7D;
+}
+
+a:hover{
+  color: #98C1D9;
 }

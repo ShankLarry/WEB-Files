@@ -7,16 +7,25 @@ let images = ["cookie_love.jpg", "hike.jpg", "meditate.jpg", "sleep.jpg", "tea.j
 let idea = 0;
 let aftIdea = 0;
 let numDays = 0;
+let thisDay = "Sunday";
 
 for(i=0; i<days.length; i++){
   document.getElementById(days[i]).addEventListener("click", dayClicked);
 }
 
+document.getElementById(thisDay).style.backgroundColor  = "#6BA5C7";
+
 
 function dayClicked(){
   document.getElementById("weekday").innerHTML = this.id;
 
+  // Change background color of currently clicked button and
+  // reset previously clicked button color:
+  document.getElementById(thisDay).style.backgroundColor  = "#98C1D9";
+  document.getElementById(this.id).style.backgroundColor  = "#6BA5C7";
+  thisDay = this.id;
 
+  //Change the picture when button clicked:
   document.getElementById("imagery").innerHTML = "<img src = 'assets/" + images[numDays] +"'>";
   if(numDays>=6){
     numDays=0;
@@ -24,6 +33,8 @@ function dayClicked(){
   else{
     numDays++;
   }
+
+  //Change the activities for Morning, Afternoon, and Evening when button clicked
   for(i=0; i<2; i++){
     document.getElementById(tags[i]).innerHTML = mornings[idea];
     document.getElementById("third").innerHTML = afternoons[aftIdea];
