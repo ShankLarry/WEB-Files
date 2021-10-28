@@ -17,8 +17,8 @@ let evenings = ["Eat a healthy snack", "Go to bed early", "Stretch",
 let tags = ["first", "second", "third", "fourth", "fifth"];
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
   "Friday", "Saturday"];
-let images = ["cookie_love.jpg", "hike.jpg", "meditate.jpg", "sleep.jpg",
-"tea.jpg", "yoga.jpg", "weights.jpg"];
+let images = ["meditate.jpg", "weights.jpg", "cookie_love.jpg", "hike.jpg", "sleep.jpg",
+"tea.jpg", "yoga.jpg"];
 let idea = 0;
 let aftIdea = 0;
 let numDays = 0;

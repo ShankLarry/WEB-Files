@@ -29,7 +29,7 @@ h2{
 
 h3{
   font-size: 36px;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 #generator{
@@ -50,7 +50,7 @@ h3{
 
 button{
   background-color: #98C1D9;
-  border: 1px solid #98C1D9;
+  border: 2px solid #98C1D9;
   color: white;
   font-family: "Allan";
   text-align: center;
@@ -62,8 +62,7 @@ button{
 }
 
 button:hover{
-  background-color: #6BA5C7;
-  border-color: #FFC9B5;
+  border: 2px solid #FFC9B5;
 }
 
 #content{
@@ -76,11 +75,12 @@ button:hover{
 }
 
 #ideas {
-  margin-top: 50px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   padding-left: 50px;
   width: 410px;
+  height: 300px;
 }
 
 .time{
@@ -91,7 +91,6 @@ button:hover{
   flex-grow: 1;
   margin:auto;
   margin-right: 50px;
-  /* margin: 50px 50px 50px 0; */
 
 }
 
