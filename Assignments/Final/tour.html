@@ -1,3 +1,7 @@
+<!-- Site: Still Problems Band Site - Tour -->
+<!-- Author: Larry Ditton -->
+<!-- Date Updated: 10 Dec 2022 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,31 +16,33 @@
 
 <body>
 
-    <div class="menu">
-      <input type="checkbox" id = "invCheck" class="toggle">
-      <div class="hamburger"><div id="line"></div></div>
-      <div class="menu-items">
+  <!-- Hamburger Nav Menu -->
+  <div class="menu">
+    <input type="checkbox" id = "invCheck" class="toggle">
+    <div class="hamburger"><div id="line"></div></div>
+    <div class="menu-items">
+      <div>
         <div>
-          <div>
-            <ul>
-              <li><a href="index.html#news" id="newsDrop">News</a></li>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="merch.html">Merch</a></li>
-              <li><a href="index.html#follow" id="followDrop">Follow</a></li>
-            </ul>
-          </div>
+          <ul>
+            <li><a href="index.html#newsNav" id="newsDrop"><span class = "underline">News</span></a></li>
+            <li><a href="index.html" id="homeDrop"><span class = "underline">Home</span></a></li>
+            <li><a href="merch.html" id="merchDrop"><span class = "underline">Merch</span></a></li>
+            <li><a href="#follow" id="followDrop"><span class = "underline">Follow</span></a></li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
   <h1>Still Problems</h1>
 
+  <!-- Top Nav Bar -->
   <div class = "top-nav">
     <div class = "toplink">
-      <a class="navlink" href="#news">News</a>
+      <a class="navlink" href="index.html">Home</a>
     </div>
     <div class = "toplink">
-      <a class="navlink" href="tour.html">Tour</a>
+      <a class="navlink" id="tourNavSel" href="#tourHead">Tour</a>
     </div>
     <div class = "toplink">
       <a class="navlink" href="merch.html">Merch</a>
@@ -47,47 +53,63 @@
   </div>
 
   <div class = "heroImg">
-    <img id = "bandTop" src = "assets/pics/band_5.jpg">
+    <img id = "tourPicture" alt = "Still Problems Tour" src = "assets/pics/band_5.jpg">
   </div>
 
-  <h2 id = "tourHead">tour</h2>
+  <section id = "tourInfo">
+    <h2 id = "tourHead">tour</h2>
 
-  <div class = "tourParent">
-    <div class = "tourColumn" id = "date">
-      <ul class = "listContainer" id = "dateList">
-      </ul>
+    <!-- Tour information populaed by JavaScript Code -->
+    <div class = "tourParent">
+      <div class = "tourColumn" id = "date">
+        <ul class = "listContainer" id = "dateList">
+        </ul>
+      </div>
+      <div class = "tourColumn" id = "location">
+        <ul class = "listContainer" id = "locList">
+        </ul>
+      </div>
+      <div class = "tourColumn" id = "ticketLink">
+      </div>
     </div>
-    <div class = "tourColumn" id = "location">
-      <ul class = "listContainer" id = "locList">
-      </ul>
-    </div>
-    <div class = "tourColumn" id = "ticketLink">
-      <!-- <ul class = "listContainer" id = "linkList">
-      </ul> -->
-    </div>
-  </div>
+  </section>
 
-  <h2 id="follow">follow</h2>
+  <section id = "followSection">
+    <h2 id="follow">follow</h2>
 
-  <div class = "followParent">
-    <div class = "followDiv" id = "spotify">
-      <img class = "icon" id = "spotifyImg" src="assets/icons/spotify.png">
-    </div>
-    <div class = "followDiv" id = "apple">
-      <img class = "icon"  id = "appleImg" src="assets/icons/apple.png">
-    </div>
-    <div class = "followDiv" id = "facebook">
-      <img class = "icon" id = "facebookImg" src="assets/icons/facebook.png">
-    </div>
-    <div class = "followDiv" id = "insta">
-      <img class = "icon" id = "instaImg" src="assets/icons/instagram.png">
-    </div>
-    <div class = "followDiv" id = "twitter">
-      <img class = "icon" id = "twitterImg" src="assets/icons/twitter.png">
-    </div>
-  </div>
+    <div class = "followParent">
+      <a href = "https://www.spotify.com/us/">
+        <div class = "followDiv" id = "spotify">
+          <img class = "icon" id = "spotifyImg" alt = "Spotify Icon" src="assets/icons/spotify.png">
+        </div>
+      </a>
 
+      <a href = "https://music.apple.com/us/browse">
+        <div class = "followDiv" id = "apple">
+          <img class = "icon"  id = "appleImg" alt = "Apple Music Icon" src="assets/icons/apple.png">
+        </div>
+      </a>
+
+      <a href = "https://www.facebook.com/">
+        <div class = "followDiv" id = "facebook">
+          <img class = "icon" id = "facebookImg" alt = "Facebook Icon" src="assets/icons/facebook.png">
+        </div>
+      </a>
+
+      <a href = "https://www.instagram.com/">
+        <div class = "followDiv" id = "insta">
+          <img class = "icon" id = "instaImg" alt = "Instagram Icon" src="assets/icons/instagram.png">
+        </div>
+      </a>
+
+      <a href = "https://www.twitter.com/">
+        <div class = "followDiv" id = "twitter">
+          <img class = "icon" id = "twitterImg" alt = "Twitter Icon" src="assets/icons/twitter.png">
+        </div>
+      </a>
+    </div>
   <p> </p>
+</section>
 
     <script src="tour.js"></script>
 </body>

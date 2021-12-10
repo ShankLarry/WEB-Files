@@ -1,3 +1,9 @@
+<!-- Site: Still Problems Band Site -->
+<!-- Author: Larry Ditton -->
+<!-- Date Updated: 10 Dec 2022 -->
+<!-- Note: This is a fictional band and as such external links go to generic sites
+(spotify.com rather than the band's actual spotify) -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +18,7 @@
 
 <body>
 
+  <!-- Hamburger Nav Menu -->
   <div class="menu">
     <input type="checkbox" id = "invCheck" class="toggle">
     <div class="hamburger"><div id="line"></div></div>
@@ -19,10 +26,10 @@
       <div>
         <div>
           <ul>
-            <li><a href="#news" id="newsDrop">News</a></li>
-            <li><a href="tour.html">Tour</a></li>
-            <li><a href="merch.html">Merch</a></li>
-            <li><a href="#follow" id="followDrop">Follow</a></li>
+            <li><a href="#newsNav" id="newsDrop"><span class = "underline">News</span></a></li>
+            <li><a href="tour.html" id="tourDrop"><span class = "underline">Tour</span></a></li>
+            <li><a href="merch.html" id=merchDrop><span class = "underline">Merch</span></a></li>
+            <li><a href="#follow" id="followDrop"><span class = "underline">Follow</span></a></li>
           </ul>
         </div>
       </div>
@@ -31,9 +38,10 @@
 
   <h1>Still Problems</h1>
 
+ <!-- Top Nav Bar -->
   <div class = "top-nav">
     <div class = "toplink">
-      <a class="navlink" href="#news">News</a>
+      <a class="navlink" href="#newsNav">News</a>
     </div>
     <div class = "toplink">
       <a class="navlink" href="tour.html">Tour</a>
@@ -47,75 +55,99 @@
   </div>
 
   <div class = "heroImg">
-    <img id = "bandTop" src = "assets/pics/band_6.jpg">
+    <img id = "bandTop" alt = "Still Problems Band" src = "assets/pics/band_6.jpg">
   </div>
 
-<h2 id="news">news</h2>
+  <!-- For navigation so menu doesn't overlap heading -->
+  <div id = "newsNav">
+  </div>
 
-<div class = "news">
-  <div class = "update" id = "update1">
-    <!-- <div class = "updateImg"> -->
-      <img class = "newsPics" id="tourPic" src = "assets/pics/band_2.jpg">
-      <button class = "newsButton" id = "tix">Get Tickets</button>
-    <!-- </div> -->
-    <div class = "updateTxt">
-      <p>New tour dates announced!</p>
+  <section id = "news">
+    <h2 id="newsHeading">news</h2>
+
+    <div class = "infoFlex">
+      <div class = "update" id = "update1">
+        <!-- <div class = "updateImg"> -->
+          <img class = "infoPics" id="tourPic" alt = "Still Problems Tour" src = "assets/pics/band_2.jpg">
+          <button class = "newsButton" id = "tix">Get Tickets</button>
+        <!-- </div> -->
+        <div class = "updateTxt">
+          <p>New tour dates announced!</p>
+        </div>
+
+      </div>
+      <div class = "update" id = "update2">
+        <!-- <div class = "updateImg"> -->
+          <img class = "infoPics" alt = "Still Problems Merch" id="newMerch" src = "assets/pics/band_4.jpg">
+          <button class = "buy">Merch</button>
+        <!-- </div> -->
+        <div class = "updateTxt">
+          <p>New merch drop!</p>
+        </div>
+
+      </div>
+      <div class = "update" id = "update3">
+
+        <img class = "infoPics" id = "albImg" alt = "C'est La Vie Album" src = "assets/pics/album_4.jpg">
+        <button class = "buy">Buy</button>
+
+      <div class = "updateTxt">
+          <p>C'est La Vie 5th Anniversary Re-release!<p>
+      </div>
+
+      </div>
     </div>
+  </section>
 
-  </div>
-  <div class = "update" id = "update2">
-    <!-- <div class = "updateImg"> -->
-      <img class = "newsPics" id="newMerch" src = "assets/pics/band_4.jpg">
-      <button class = "buy">Merch</button>
-    <!-- </div> -->
-    <div class = "updateTxt">
-      <p>New merch drop! New T-shirt design!</p>
-    </div>
+  <section id = "latestRel">
+    <h2>latest release</h2>
 
-  </div>
-  <div class = "update" id = "update3">
-    <!-- <div class = "updateImg"> -->
-      <img class = "newsPics" id = "albImg" src = "assets/pics/album_4.jpg">
+    <div class = "releaseBox">
+      <img id = "latest" alt = "This Must Be the Place Album" src = "assets/pics/album_5.jpg">
       <button class = "buy">Buy</button>
-    <!-- </div>   -->
-    <div class = "updateTxt">
-      <p>C'est La Vie 5th Anniversary Re-release!<p>
+    </div>
+  </section>
+
+  <section id = "followSection">
+    <h2 id="follow">follow</h2>
+
+    <div class = "followParent">
+      <a href = "https://www.spotify.com/us/">
+        <div class = "followDiv" id = "spotify">
+          <img class = "icon" id = "spotifyImg" alt = "Spotify Icon" src="assets/icons/spotify.png">
+        </div>
+      </a>
+
+      <a href = "https://music.apple.com/us/browse">
+        <div class = "followDiv" id = "apple">
+          <img class = "icon"  id = "appleImg" alt = "Apple Music Icon" src="assets/icons/apple.png">
+        </div>
+      </a>
+
+      <a href = "https://www.facebook.com/">
+        <div class = "followDiv" id = "facebook">
+          <img class = "icon" id = "facebookImg" alt = "Facebook Icon" src="assets/icons/facebook.png">
+        </div>
+      </a>
+
+      <a href = "https://www.instagram.com/">
+        <div class = "followDiv" id = "insta">
+          <img class = "icon" id = "instaImg" alt = "Instagram Icon" src="assets/icons/instagram.png">
+        </div>
+      </a>
+
+      <a href = "https://www.twitter.com/">
+        <div class = "followDiv" id = "twitter">
+          <img class = "icon" id = "twitterImg" alt = "Twitter Icon" src="assets/icons/twitter.png">
+        </div>
+      </a>
     </div>
 
-  </div>
-</div>
-
-<h2>latest release</h2>
-
-
-<div class = "releaseBox">
-  <img id = "latest" src = "assets/pics/album_5.jpg">
-  <button class = "buy">Buy</button>
-</div>
-
-
-<h2 id="follow">follow</h2>
-
-<div class = "followParent">
-  <div class = "followDiv" id = "spotify">
-    <img class = "icon" id = "spotifyImg" src="assets/icons/spotify.png">
-  </div>
-  <div class = "followDiv" id = "apple">
-    <img class = "icon"  id = "appleImg" src="assets/icons/apple.png">
-  </div>
-  <div class = "followDiv" id = "facebook">
-    <img class = "icon" id = "facebookImg" src="assets/icons/facebook.png">
-  </div>
-  <div class = "followDiv" id = "insta">
-    <img class = "icon" id = "instaImg" src="assets/icons/instagram.png">
-  </div>
-  <div class = "followDiv" id = "twitter">
-    <img class = "icon" id = "twitterImg" src="assets/icons/twitter.png">
-  </div>
-</div>
-
-<p> </p>
+    <p> </p>
+  </section>
 
   <script src="index.js"></script>
+
+</body>
 
 </html>

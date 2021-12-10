@@ -1,12 +1,181 @@
+<!-- Site: Still Problems Band Site - Merch -->
+<!-- Author: Larry Ditton -->
+<!-- Date Updated: 10 Dec 2022 -->
+<!-- Note: This is a fictional band and as such full "checkout" functionality is simulated -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>Still Problems Merch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Yuji+Boku&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
-  <h1>merch</h1>
+  <h1>Still Problems</h1>
+
+  <!-- Hamburger Nav Menu -->
+  <div class="menu">
+    <input type="checkbox" id = "invCheck" class="toggle">
+    <div class="hamburger"><div id="line"></div></div>
+    <div class="menu-items">
+      <div>
+        <div>
+          <ul>
+            <li><a href="index.html#newsNav" id="newsDrop"><span class = "underline">News</span></a></li>
+            <li><a href="tour.html" id="tourDrop"><span class = "underline">Tour</span></a></li>
+            <li><a href="index.html" id="homeDrop"><span class = "underline">Home</span></a></li>
+            <li><a href="#follow" id="followDrop"><span class = "underline">Follow</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "cart" id ="cartArea">
+    <img id = "cartIcon" src ="assets/icons/cart.png">
+    <h3 id= "numItems">0</h3>
+  </div>
+
+  <!-- Top Nav Bar -->
+  <div class = "top-nav">
+    <div class = "toplink">
+      <a class="navlink" href="index.html">Home</a>
+    </div>
+    <div class = "toplink">
+      <a class="navlink" href="tour.html">Tour</a>
+    </div>
+    <div class = "toplink">
+      <a class="navlink" id = "merchNav" href="#merchHead">Merch</a>
+    </div>
+    <div class = "toplink">
+      <a class="navlink" href="#follow">Follow</a>
+    </div>
+  </div>
+
+
+  <div class = "heroImg">
+    <img id = "merchPicture" alt = "Still Problems Guitar and Shirt" src = "assets/pics/band_4.jpg">
+  </div>
+
+  <h2 id = "merchHead">merch</h2>
+
+
+  <section id = "albumSale">
+    <h2 class = "merchCat">albums</h2>
+
+    <div class = "infoFlex">
+      <div class = "update" id = "update1">
+          <img class = "infoPics" id="tourPic" alt = "Nothing to See Here Album" src = "assets/pics/album_2.jpg">
+          <button class = "buy">Buy</button>
+        <div class = "updateTxt">
+          <p>$10</p>
+          <p>Nothing to See Here</p>
+        </div>
+      </div>
+
+      <div class = "update" id = "update2">
+          <img class = "infoPics" id="newMerch" alt = "C'est La Vie Album" src = "assets/pics/album_4.jpg">
+          <button class = "buy">Buy</button>
+        <div class = "updateTxt">
+          <p>$10</p>
+          <p>C'est La Vie (5th Anniversary)<p>
+        </div>
+      </div>
+
+      <div class = "update" id = "update3">
+          <img class = "infoPics" id = "albImg" alt = "This Must Be the Place Album" src = "assets/pics/album_5.jpg">
+          <button class = "buy">Buy</button>
+        <div class = "updateTxt">
+          <p>$10</p>
+          <p>This Must Be the Place<p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id = "shirtSale">
+    <h2 class = "merchCat">t-shirts</h2>
+
+    <div class = "infoFlex">
+      <div class = "update" id = "update1">
+
+          <img class = "infoPics" id="tourPic" alt = "Nothing to See Here Shirt" src = "assets/pics/shirt_1.png">
+          <button class = "shirtBuy">Buy</button>
+
+        <div class = "updateTxt">
+          <p>$15</p>
+          <p>NTSH Shirt</p>
+        </div>
+
+      </div>
+      <div class = "update" id = "update2">
+        <!-- <div class = "updateImg"> -->
+          <img class = "infoPics" id="newMerch" alt = "This Must Be The Place Shirt" src = "assets/pics/shirt_2.png">
+          <button class = "shirtBuy">Buy</button>
+        <!-- </div> -->
+        <div class = "updateTxt">
+          <p>$15</p>
+          <p>TMBTP Shirt</p>
+        </div>
+
+      </div>
+      <div class = "update" id = "update3">
+
+          <img class = "infoPics" id = "albImg" alt = "C'est La Vie Shirt" src = "assets/pics/shirt_3.png">
+          <button class = "shirtBuy">Buy</button>
+
+        <div class = "updateTxt">
+          <p>$15</p>
+          <p>CLV Shirt<p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id ="followSection">
+    <h2 id="follow">follow</h2>
+
+    <div class = "followParent">
+      <a href = "https://www.spotify.com/us/">
+        <div class = "followDiv" id = "spotify">
+          <img class = "icon" id = "spotifyImg" alt = "Spotify Icon" src="assets/icons/spotify.png">
+        </div>
+      </a>
+
+      <a href = "https://music.apple.com/us/browse">
+        <div class = "followDiv" id = "apple">
+          <img class = "icon"  id = "appleImg" alt = "Apple Music Icon" src="assets/icons/apple.png">
+        </div>
+      </a>
+
+      <a href = "https://www.facebook.com/">
+        <div class = "followDiv" id = "facebook">
+          <img class = "icon" id = "facebookImg" alt = "Facebook Icon" src="assets/icons/facebook.png">
+        </div>
+      </a>
+
+      <a href = "https://www.instagram.com/">
+        <div class = "followDiv" id = "insta">
+          <img class = "icon" id = "instaImg" alt = "Instagram Icon" src="assets/icons/instagram.png">
+        </div>
+      </a>
+
+      <a href = "https://www.twitter.com/">
+        <div class = "followDiv" id = "twitter">
+          <img class = "icon" id = "twitterImg" alt = "Twitter Icon" src="assets/icons/twitter.png">
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  <script src="merch.js"></script>
 </body>
 
 </html>
