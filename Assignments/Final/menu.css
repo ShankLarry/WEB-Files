@@ -149,3 +149,10 @@ li{
 .menu .menu-items > div > div >ul >li > a:hover{
   color: white;
 }
+
+@media screen and (max-width:1024px){
+  .hamburger{
+    width: 30px;
+    height: 30px;
+  }
+}

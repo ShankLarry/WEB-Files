@@ -2,6 +2,7 @@
 /* Author: Larry Ditton */
 
 
+
 body{
   background-color: black;
   font-family: 'Noto Sans', sans-serif;
@@ -40,7 +41,7 @@ button:hover{
 p{
   font-family: 'Noto Sans', sans-serif;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.8vh;
 }
 
 .navlink{
@@ -76,6 +77,27 @@ p{
   object-position: 50% 72%;
 }
 
+.infoFlex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.update{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.infoPics{
+  display: block;
+  object-fit: cover;
+  width: 20vw;
+  height: 20vw;
+}
 
 .newsButton{
   margin-top: 3vh;
@@ -95,6 +117,13 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#latest{
+  display: block;
+  object-fit: cover;
+  width: 20vw;
+  height: 20vw;
 }
 
 .buyButton {
@@ -152,7 +181,7 @@ p{
 
 .tourColumn{
   flex-grow: 1;
-  /* text-align: center; */
+  text-align: center;
   font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
 }
@@ -198,14 +227,14 @@ a:hover{
 
 #cartIcon{
   width: 60px;
-  padding-top: 15px;
-  padding-right: 2px;
+  padding-top: 20px;
+  padding-right: 1.5rem;
 }
 
 #numItems{
   position: fixed;
-  top: 14px;
-  right: 14px;
+  top: 19px;
+  right: 37px;
 }
 
 #merchHead{
@@ -221,189 +250,4 @@ a:hover{
 
 #merchNav{
   color: white;
-}
-
-@media screen and (max-width:1208px){
-  button{
-    font-size: 1.8vh;
-  }
-
-  .tixButtons{
-    font-size: 1.8vw;
-  }
-
-  p{
-    font-size: 2vw;
-  }
-
-  .newsButton{
-    width: 15vw;
-  }
-
-  .buy{
-    width: 15vw;
-  }
-}
-
-@media screen and (min-width:872px){
-  .infoFlex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .update{
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    align-items: center;
-    /* justify-content: center; */
-  }
-
-  .infoPics{
-    display: block;
-    object-fit: cover;
-    width: 20vw;
-    height: 20vw;
-  }
-
-  #latest{
-    display: block;
-    object-fit: cover;
-    width: 20vw;
-    height: 20vw;
-  }
-}
-
-@media screen and (max-width:872px){
-  .infoFlex{
-    text-align: center;
-  }
-
-  p{
-    font-size: 4vw;
-  }
-
-  .update{
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-  }
-
-  .infoPics{
-    display: block;
-    object-fit: cover;
-    width: 70vw;
-    height: 70vw;
-  }
-
-  #latest{
-    display: block;
-    object-fit: cover;
-    width: 40vw;
-    height: 40vw;
-  }
-
-  .newsButton{
-    width: 25vw;
-    padding: 2vw;
-  }
-
-  .buy{
-    width: 25vw;
-    padding: 2vw;
-  }
-
-  .shirtBuy{
-    width: 25vw;
-    padding: 2vw;
-  }
-
-  .toplink {
-
-    width: 10vw;
-  }
-
-  .followDiv{
-    width: 15vw;
-  }
-
-  .icon{
-    width: 8vw;
-  }
-
-}
-
-@media screen and (max-width:620px){
-  .toplink {
-    width: 20vw;
-  }
-
-  .tixButtons{
-    font-size: 3vw;
-    width: 25vw;
-  }
-}
-
-@media screen and (max-width:1226px){
-  .listContainer{
-    margin-top:5.5px;
-  }
-
-  .tixButtons{
-    font-size: 1em;
-  }
-}
-
-@media screen and (min-width:900px){
-  .tourColumn{
-    text-align: center;
-  }
-}
-
-@media screen and (max-width:493px){
-  .tixButtons{
-    font-size: 3vw;
-  }
-
-  .listContainer{
-    font-size: 3vw;
-    margin-top: 3.5px;
-  }
-}
-
-.listContainer{
-  padding-left: 0;
-}
-
-@media screen and (max-width:823px){
-  .tixButtons{
-    width: 25vw;
-  }
-}
-
-@media screen and (max-width:340px){
-  .tixButtons{
-    margin-bottom: 21.5px;
-  }
-}
-
-@media screen and (max-width:1024px){
-  #cartIcon{
-    width: 42px;
-  }
-
-  #numItems{
-    font-size: 15px;
-    top: 10.5px;
-    right: 9px;
-  }
-
-@media screen and (max-width:493px){
-  h1{
-    font-size: 60px;
-  }
-}
-
 }
