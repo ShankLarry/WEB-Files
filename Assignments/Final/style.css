@@ -207,13 +207,13 @@ a:hover{
 #cartIcon{
   width: 60px;
   padding-top: 15px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 #numItems{
   position: fixed;
   top: 14px;
-  right: 23px;
+  right: 33px;
 }
 
 #merchHead{
@@ -399,13 +399,15 @@ a:hover{
 
 @media screen and (max-width:1024px){
   #cartIcon{
+    padding-top: 10px;
     width: 42px;
+    /* right: 10px; */
   }
 
   #numItems{
     font-size: 15px;
-    top: 10.5px;
-    right: 9px;
+    top: 6px;
+    right: 28px;
   }
 
 @media screen and (max-width:493px){
