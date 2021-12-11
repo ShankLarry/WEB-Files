@@ -43,6 +43,11 @@ p{
   font-size: 1.5vw;
 }
 
+#goHome{
+  text-decoration: none;
+  color: white;
+}
+
 .navlink{
   color: grey;
   cursor: pointer;
